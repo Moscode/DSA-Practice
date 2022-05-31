@@ -35,7 +35,7 @@
 
 
 /**
- * Solution 1 : Hash Table and a single for loop
+ * Solution 2 : Hash Table and a single for loop
  * Time complexity is O(n)
  * Space complexity is O(n)
  */
