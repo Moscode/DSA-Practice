@@ -16,7 +16,7 @@
 
 
 /**
- * Solution 1 : Two for loops
+ * Solution 1: Two for loops
  * Time complexity is O(n^2)
  * Space complexity is O(1)
  */
@@ -34,8 +34,9 @@
 };
 
 
+
 /**
- * Solution 2 : Hash Table and a single for loop
+ * Solution 2: Hash Table and a single for loop
  * Time complexity is O(n)
  * Space complexity is O(n)
  */
@@ -55,15 +56,8 @@
   };
 
 
-                                // _________ _______  _______ _________   
-                                // \__   __/(  ____ \(  ____ \\__   __/  
-                                //    ) (   | (    \/| (    \/   ) (   
-                                //    | |   | (__    | (_____    | |    
-                                //    | |   |  __)   (_____  )   | |    
-                                //    | |   | (            ) |   | |   
-                                //    | |   | (____/\/\____) |   | |
-                                //)_(   (_______/\_______)   )_(
 
+// Testing Using Mocha
     mocha.setup("bdd");
     const { assert } = chai;
     
@@ -71,7 +65,7 @@
       it("return array of indices that sum to target", () => {
         const res = twoSum([2,7,11,15], 9);
         assert.equal(typeof res, "object");
-        assert.equal(res, [0, 1]);
+        assert.deepEqual(res, [0,1]);
       });
     });
     
